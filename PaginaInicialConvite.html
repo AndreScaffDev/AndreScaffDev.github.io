@@ -80,7 +80,9 @@ h3 {
     $(".parallax",).click(function() {
       
     var selectedEffect = $("#effectTypes").val();
-     $(".parallax").effect('clip',2000, callback);
+     $(document).ready(function() {
+
+      $(".parallax").hide(0).delay(0).show(2000,"linear");
   
       return false;
     });
