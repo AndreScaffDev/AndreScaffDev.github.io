@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>PaginaTeste</title>
+</head>
+<style>
+    .parallax {
+        background-size: cover;
+    }
+    
+    img {
+        width: 100%;
+        position: center;
+    }
+    
+    #container-da-imagem img {
+        width: 100%
+    }
+    
+    #container-da-imagem {
+        width: 500px;
+        position: relative;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div id="container-imagem"></div>
+
+    <div class="parallax">
+        <img src="background2.png" alt="background"><img>
+        <div class="CorpoConvite">
+
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+
+                    $(".parallax").hide(0).delay(0).show(2000, "linear");
+
+
+
+                    function runEffect() {
+                        var selectedEffect = $("#effectTypes").val();
+
+                        $("#effect").effect(selectedEffect, options, 500, callback);
+
+                    };
+
+
+                    $(".parallax", ).click(function() {
+
+                        var selectedEffect = $("#effectTypes").val();
+                        $(".parallax").effect('clip', 2000, callback);
+
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    </div>
+    </center>
+
+
+</body>
+
+
+</html>
